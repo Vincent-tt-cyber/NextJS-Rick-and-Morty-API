@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
+import { ROUTES } from "@/utils/routes";
+import Link from "next/link";
 // interface Props {
 //   children: React.ReactNode;
 // }
@@ -16,7 +18,9 @@ export const Header = () => {
             The Rick and Morty API
           </h1>
           <ul>
-            <li>Characters</li>
+            <Link href={ROUTES.CHARACTERS}>
+              <li>Characters</li>
+            </Link>
           </ul>
         </div>
       </div>
